@@ -4,4 +4,11 @@ git remote add origin https://github.com/Keakee/JS-Start.git
 git add .
 git status
 git commit -m "Any changes"
-git push
+git push -u origin <branch name>
+
+0 master
+----------
+1 dev
+--------------- + -----
+2 
+---------------
