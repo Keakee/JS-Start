@@ -89,5 +89,5 @@ console.log(Greetings);
 let number = myObject['age'];
 console.log(number);
 
-let anyAnswer = prompt("Your name");
-console.log(anyAnswer);
+// let anyAnswer = prompt("Your name");
+// console.log(anyAnswer);
