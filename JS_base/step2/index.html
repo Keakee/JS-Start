@@ -12,21 +12,21 @@
     let goodsCount = 0;
 
     // if(goodsCount === 0){
-    //     console.log(`Cart is empty`)
+    //     console.log(`Cart is empty`);
     // }
 
     // if(goodsCount  > 0){
     //     console.log(`Amout of items: ${goodsCount}`);
     // } else {
-    //     console.log(`Cart is empty`)
-    //     document.write(`Cart is empty`)
+    //     console.log(`Cart is empty`);
+    //     document.write(`Cart is empty`);
     // }
 
     // goodsCount>0?console.log(`Amout of items: ${goodsCount}`):console.log(`Cart is empty`);
     // goodsCount > 0
     //     ? console.log(`Amout of items: ${goodsCount}`)
     //     : console.log(`Cart is empty`)
-    // ;
+    // 
     // console.log(goodsCount>0?`Amout of items: ${goodsCount}`:`Cart is empty`);
 
     // const good = 'apple';
@@ -38,32 +38,83 @@
     // {
     //     console.log('bananas cost 80 euros');
     // } 
-    // else if (good === 'apple' || good === 'pear')
+    // else if (good === 'apple' || good === 'pear');
     // {
-    //     console.log('apples and pears both cost 80 euros')
+    //     console.log('apples and pears both cost 80 euros');
     // } 
     // else 
     // {
-    //     console.log('unknown fruit')
+    //     console.log('unknown fruit');
     // }
+
+    // *********************************** ( "===" is absolutely correct) ****************************************
 
     // switch(good){
     //     case "banana":
-    //         console.log("banana\'s cost is 50 euros")
+    //         console.log("banana\'s cost is 50 euros");
     //         break;
     //     case "mango":
-    //         console.log("mango\'s cost is 80 euros")
+    //         console.log("mango\'s cost is 80 euros");
     //         break;
     //     case "apple":
-    //         console.log("Apple's cost is 100 euros")
+    //         console.log("Apple's cost is 100 euros");
     //         break;
     //     case "Pear":
-    //         console.log("Pear's cost is 150 euros")
+    //         console.log("Pear's cost is 150 euros");
     //         break;
     //     default:
     //         console.log('Unknown fruit');
     // }
 
+    // let _int = 0;
+    // let _boolean = false;
+    // if(_int === _boolean){
+    //     console.log("true");
+    // } else{
+    //     console.log("false");
+    // }
+
+    // function declaration
+
+    // function sayPrice(good){
+    //     switch(good){
+    //         case "banana":
+    //             console.log("banana\'s cost is 50 euros");
+    //             break;
+    //         case "mango":
+    //             console.log("mango\'s cost is 80 euros");
+    //             break;
+    //         case "apple":
+    //             console.log("Apple's cost is 100 euros");
+    //             break;
+    //         case "Pear":
+    //             console.log("Pear's cost is 150 euros");
+    //             break;
+    //         default:
+    //             console.log('Закерили Бота');
+    //     }
+    // }
+    // sayPrice("Ye")
+
+    // function expression
+
+    // const myFunc = function(){
+    //     console.log("i am a function expression");
+    // };
+    // myFunc();
+
+    function getPriceByCount(good, count){
+        //get price for one product
+        const price = getGoodPrice(good);
+        if(price === false){
+            console.error('product not found');
+            return false
+        }
+        return price * count
+    }
+    console.log(getPriceByCount('mango', 3));
+    console.log(getPriceByCount('apple', 2));
+    console.log(getPriceByCount('pear', 1));
     </script>
 </body>
 </html>
