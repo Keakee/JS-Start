@@ -1,4 +1,2 @@
-let goodsCount = 1;
-if(goodsCount  > 0){
-    console.log(`Amout of items: ${goodsCount}`);
-}
+let arr = [5, 6, 'Hello'];
+console.log(arr.length);
