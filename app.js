@@ -5,6 +5,8 @@ let app = express();
 
 let port = 3000;
 
+app.use(express.static('public'));
+
 app.listen(3000, function(){
     console.log(`node express working on ${port}`);
 });
@@ -14,6 +16,7 @@ app.listen(3000, function(){
 
 app.get('/', function(request, response){
     response.end('<h1>Hello</h1> my first indie website');
+    response.render('index.html');
 });
 
 app.get('/categories', function(request, response){
