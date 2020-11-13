@@ -9,7 +9,7 @@
     <script>
         "use strict"
     //================1 ================
-    let goodsCount = 0;
+    // let goodsCount = 0;
 
     // if(goodsCount === 0){
     //     console.log(`Cart is empty`);
@@ -98,23 +98,68 @@
 
     // function expression
 
-    // const myFunc = function(){
+    // const myFunc = function(){d
     //     console.log("i am a function expression");
     // };
     // myFunc();
 
-    function getPriceByCount(good, count){
-        //get price for one product
-        const price = getGoodPrice(good);
-        if(price === false){
-            console.error('product not found');
-            return false
-        }
-        return price * count
-    }
-    console.log(getPriceByCount('mango', 3));
-    console.log(getPriceByCount('apple', 2));
-    console.log(getPriceByCount('pear', 1));
+    // function getPriceByCount(good, count){
+    //     //get price for one product
+    //     const price = getGoodPrice(good);
+    //     if(price === false){
+    //         console.error('product not found');
+    //         return false
+    //     }
+    //     return price * count
+    // }
+    // console.log(getPriceByCount('mango', 3));
+    // console.log(getPriceByCount('apple', 2));
+    // console.log(getPriceByCount('pear', 1));
+
+    // linear functions
+    // реализация вывода через return
+    // const myFunc = () => console.log("hello");
+    // myFunc();
+
+    // function myFunc(){
+    //     return console.log("Hello");
+    // }
+    // myFunc();
+
+    // rules and cautions
+    // can write without {} if one command
+    // if more have to write with {}
+
+    // if function is without parameters, have to write ()
+    // const myFunc = () => {
+    //     const a = 5;
+    //     console.log('Hello' + a);
+    // }
+
+    // myFunc();
+    // if function receives only one parameter, write without ()
+    // const myFunc = num => console.log('Hello ' + num);
+    // if there are many parameters, write ()
+    
+    // const myFunc = (num1, num2) => {
+    //     const a = num1 + num2;
+    //     console.log(a);
+    // }
+    
+    // return - works without figure brackets
+    // const myFunc = (num1, num2) => num1 + num2;
+    // console.log(myFunc(2, 5));
+
+    // var - does not create new variable, just changes
+    // let a = 1;
+    // if (a === 1)
+    // {
+    //     let a = 5;
+    //     alert(a);
+    // }
+    // alert(a);
+
+    
     </script>
 </body>
 </html>
