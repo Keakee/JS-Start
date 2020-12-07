@@ -7,7 +7,6 @@
 </head>
 <body>
     <script>
-
         // while
         // while -> check then do
         // let i = 0;
@@ -40,7 +39,138 @@
         //     alert(`for second ${i}`);
         // }
 
-        // creating variables with for
+        // creating a few variables
+        // its possible to create many variables or [++] using commas
+        // However conditions must be together (without commas)
+        // for(let i = 0, b = 3; (i < 3) && (b > 0? true:false); i++, b--){
+        //     alert(`for ${i}`);
+        // }
+
+        // infinite loops
+        // let i = 0;
+        // while(i === 0){
+        //     alert('infinite loop');
+        // };
+        // // or like this:
+        // while(true){
+        //     alert('infinite loop');
+        // };
+        // // or like this:
+        // for(;;){
+        //     alert('infinite loop');
+        // };
+        
+        // interruption and control of iterations
+        // break - breaks(ends a cycle), can stop all cycles
+        // for(let i = 0;; i++){
+        //     if(i > 2){
+        //         break;
+        //     }
+        //     alert(i);
+        // };
+        //continue - interrupts only the current iteration and stats the code from the beginning of cycle's body
+        // for(let i = 0; i < 10; i++){
+        //     if(i > 12){
+        //         break;
+        //     }
+        //     if(i % 2 === 1){
+        //         continue
+        //     }
+        //     alert(i);
+        // };
+
+        // for(let a = 0; a < 3; a++){
+        //     alert(`Launched external cycle, a = ${a}`);
+        //     for(let b = 0; b < 3; b++){
+        //         alert(`Launched external cycle, a = ${b}`);
+        //         if(b >= 1){
+        //             alert('interrupting internal cycle');
+        //             break;
+        //         }
+        //     }
+        // }
+        // console.log("I am in the next step")
+
+        // outerLoop;
+        // for(let a = 0; a < 3; a++){
+        //     alert(`Launched external cycle, a = ${a}`);
+        //     for(let b = 0; b < 3; b++){
+        //         alert(`Launched external cycle, a = ${b}`);
+        //         if(b >= 1){
+        //             alert('interrupting internal cycle');
+        //             break outerloop;
+        //         }
+        //     }
+        // }
+        // console.log("I am in the next step")
+
+        // arrays in js
+        // let a = 'string1';
+        // let b = 'string2';
+        // let c = 'string3';
+
+        // let arr = ['string1', 'string2', 'string3'];
+
+        // let a = [];
+        // let b = [5, true, 'string2', 3.14]
+        // console.log(a.length)
+
+        // let arr = [
+        //     [1,5,"Hello",false],
+        //     [55,true,8,3,3.14],
+        //     [true, 'row', 5]
+        // ];
+
+        // let innerArr = arr[0];
+        // console.log(arr[1][2]);
+
+        // for for of
+        // let arr = [55,true,8,3,3.14];
+        // for(const val of arr){
+        //     console.log(`Has values ${val}`);
+        // }
+
+        // which loop and where to apply?
+        // for with numerical values - get index and value
+        // for of - when the index is not needed, but we need to pick a value
+        // for in - mosly for objects
+
+        // changing arrays
+        // dont do like shown below:
+
+        // let arr = [55,true,8,3,3.14];
+        // delete arr[2];
+        // console.log(arr);
+
+        // do like this:
+        // let arr = [55,true,8,3,3.14];
+        // arr.push('new line');
+        // console.log(arr);
+        // arr.unshift('firts letter');
+        // console.log(arr);
+        // arr.pop();
+        // console.log(arr);
+
+        // Deletion from any place
+        // Replacing
+        // let arr = [55,true,8,'Hello',3.14];
+        // // starting with first element we deleted true
+        // let deleteElem = arr.splice(1,1);
+        // console.log(arr);
+        // console.log(deleteElem);
+
+        // Add new in place of the deleted element
+        // let arr = [55,true,8,'Hello',3.14];
+        // let deleteElem = arr.splice(1,1,123,45,'Me');
+        // console.log(arr);
+        // console.log(deleteElem);
+        // console.log(arr);
+
+        // No deletion, just replacing
+        // let arr = [55,true,8,'Hello',3.14];
+        // let deleteElem = arr.splice(1,0,123,45,'Me');
+        // console.log(arr);
+        // console.log(deleteElem);
     </script>
 </body>
 </html>
